@@ -1,6 +1,18 @@
 <pre>
-CREATE DATABASE apicrud;
-SELECT datname FROM pg_database;
+
+composer create-project laravel/laravel crud
+
+php artisan make:model Post -m
+
+php artisan make:request StorePostRequest
+
+php artisan make:resource PostResource
+
+php artisan make:controller Api/PostController
+
+php artisan install:api
+
+**php artisan migrate**    
 </pre>
 
 
